@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Homer",
+        "image": "./assets/homer.png",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "Marge",
+        "image": "./assets/marge.png",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "Bart",
+        "image": "./assets/bart.png",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "Edna",
+        "image": "./assets/edna.png",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "Lenny and Carl",
+        "image": "./assets/lennyandcarl.png",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "Lisa",
+        "image": "./assets/lisa.png",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "Maggie",
+        "image": "./assets/maggie.png",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "Milhouse",
+        "image": "./assets/milhouse.png",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "Moe",
+        "image": "./assets/moe.png",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "Patty",
+        "image": "./assets/patty.png",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "Selma",
+        "image": "./assets/selma.png",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "name": "Skinner",
+        "image": "./assets/skinner.png",
+        "clicked": false
+    }
+]
