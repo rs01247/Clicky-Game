@@ -6,6 +6,7 @@ const Container = props => (
             <p style={{fontWeight: "bold"}}>Click any character to begin the game, earn points by not clicking any more than once!</p>
             <h4>Score: {props.score} | Top Score: {props.topScore}</h4>
         </div>
+        {props.children}
     </div>
 );
 
