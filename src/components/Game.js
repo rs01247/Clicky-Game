@@ -2,6 +2,7 @@ import React from 'react';
 import Simp from "./Simp";
 import Header from "./Header";
 import Container from "./Container";
+import Footer from "./Footer";
 import simpsons from "../simpsons.json";
 
 class Game extends React.Component {
@@ -13,14 +14,14 @@ class Game extends React.Component {
     };
 
     // componentDidMount() {
-    //     this.setState({ simpsons: this.clickCount(this.state.simpsons) });
+    //     this.setState({ simpsons: this.isClicked(this.state.simpsons) });
     // }
 
     gameOver = () => {
         if (this.state.score > this.state.topScore) {
             this.setState({ topScore: this.state.score }, () => console.log(this.state.topScore));
         };
-        this.state.simpsons.each(simps => {
+        this.state.simpsons.forEach(simps => {
             simps.clicked = false;
         });
         this.setState({ score: 0 });
@@ -28,7 +29,7 @@ class Game extends React.Component {
     };
 
 
-    clickCount = id => {
+    isClicked = id => {
         this.state.simpsons.find((i, j) => {
             if (i.id === id) {
                 if (simpsons[j].clicked === false) {
@@ -53,13 +54,14 @@ class Game extends React.Component {
                 <Container score={this.state.score} topScore={this.state.topScore}>
                     {this.state.simpsons.map(simps => (
                         <Simp
-                            clickCount={this.clickCount}
+                            isClicked={this.isClicked}
                             id={simps.id}
                             key={simps.id}
                             image={simps.image}
                         />
-                    ))}
+                    ))} 
                 </Container>
+                {/* <Footer /> */}
             </div>
         )
     };
